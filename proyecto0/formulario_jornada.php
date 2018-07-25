@@ -113,6 +113,14 @@ include("conexion.php");
 		<?php } ?>
 	</table>
 	</div>
+	<!-- ****************para editar lo enviamos a otro formulario ************** -->
+	<?php
+	if (isset($_GET['editar'])) {
+		include("editar_formulario_jornada.php");
+
+	}		
+?>
+	
 	<!-- ****************Codigo para borrar un registro************** -->
 <?php
 if (isset($_GET['borrar'])) {
